@@ -39,10 +39,10 @@ class Board
   def valid_move?(position)
     !(taken?(position))  && (0..9).include?(position.to_i - 1)
   end
-  
+
   #update updates the cells in the board with the player token according to the input
   token = "O"
-  
+
   def update(position, token)
     cells[position.to_i - 1] = token
     display
@@ -54,7 +54,7 @@ class Player
 
   #initialize accepts a token to assign
   def initialize(token)
-    
+
   end
 
   # token cannot be changed once assigned in initialize
